@@ -1,9 +1,30 @@
+
+
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
+  background: linear-gradient(90deg, #521767bc, #0e061c);
   text-align: center;
+  padding: 12px 0;
   color: white;
-  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+}
+
+body {
+  padding-bottom: 80px;
+
+}
+
+.list-heading {
+    background: linear-gradient(90deg, #6c757d, #343a40); /* subtle gradient from gray to dark */
+    color: white; /* text color */
+    padding: 12px 20px; /* space around text */
+    border-radius: 8px; /* rounded edges */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* soft shadow */
+    font-weight: 600;
+    margin-bottom: 20px; /* space below heading */
 }

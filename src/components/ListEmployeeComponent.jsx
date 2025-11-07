@@ -47,13 +47,19 @@ function removeEmployee(id){
 }
 
   return (
-    <div className='container' >
-    
-       <h2 className='text-center'>List of Employee</h2>
 
+    <div className='container mt-4' >
+       <div className='card shadow-lg p-4 border-0 rounded-3'>
+
+       <h2 className='text-center mb-3 fw-bold list-heading'>List of Employee</h2>
+      
+        <div className='d-flex justify-content-end mb-3'>
        <button className='btn btn-primary mb-2' onClick={addNewEmployee}>Add Employee</button>
+          </div>
+
+          <div className='card shadow p-3'>
           <table className='table table-striped table-bordered'>
-            <thead>
+            <thead className='table-dark'>
                 <tr>
                     <th>Employee Id</th>
                     <th>Employee First Name</th>
@@ -71,7 +77,7 @@ function removeEmployee(id){
                            <td>{employee.lastName}</td>
                            <td>{employee.email}</td>
                            <td>
-                                <button className='btn btn-info' onClick={() => editEmployee(employee.id)}>Update</button>
+                                <button className='btn btn-info me-2' onClick={() => editEmployee(employee.id)}>Update</button>
 
                                 <button className='btn btn-danger ms-2' onClick={() => removeEmployee(employee.id)}>Delete</button>
 
@@ -81,7 +87,10 @@ function removeEmployee(id){
               
             </tbody>
           </table>
+        </div>
+        </div>    
     </div>
+ 
   );
 };
 
